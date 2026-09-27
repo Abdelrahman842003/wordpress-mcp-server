@@ -1,0 +1,36 @@
+{
+  "name": "wordpress-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) Server for WordPress Administration & Content Management",
+  "main": "dist/index.js",
+  "bin": {
+    "wordpress-mcp-server": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "wordpress",
+    "rest-api",
+    "ai",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "form-data": "^4.0.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
